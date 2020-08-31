@@ -32,11 +32,7 @@ int val = 0;  //value to store the current value of button
         
 IPAddress gwip(172,128, 128, 1);         // GW fixed IP adress
 IPAddress apip(172,128, 128, 10);         // AP fixed IP adress
-uint8_t apChannel = 2;                  // AP wifi channel
-String answerLine = "";                   // make a String to hold incoming php-data from the client
-String answerList1[32];                   // store of answerList SSID
-String answerList2[32];                   // store of answerList answers
-int answerCounter =0;                     
+uint8_t apChannel = 2;                  // AP wifi channel             
 
 int status = WL_IDLE_STATUS; // wifi status
 WiFiServer server(80); // Server declaring on port 80
